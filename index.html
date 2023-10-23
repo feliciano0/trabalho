@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portifólio Pessoal</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        header h1 {
+            margin: 5px 0;
+        }
+
+        header img {
+            display: block;
+            margin: auto;
+            max-height: 500px;
+        }
+
+        nav {
+            background-color: #f0f0f0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center; /* Centraliza os links verticalmente */
+        }
+
+        nav li {
+            margin: 20px 0; /* Adiciona espaço entre os links verticalmente */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .home-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Portfólio Pessoal</h1>
+        <img src="imagens/DSC_0074.jpg" height="500" alt="Imagem do Portfólio">
+        <nav>
+            <ul>
+                <li><button onclick="openPage('sobre mim.html')">Sobre Mim</button></li>
+                <li><button onclick="openPage('minha formação.html')">Formação Educacional</button></li>
+                <li><button onclick="openPage('projeto.html')">Projeto</button></li>
+                <li><button onclick="openPage('contatos.html')">Contato</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <!-- O conteúdo da página será carregado aqui -->
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2023 Wallisson Ruan Santos Feliciano</p>
+    </footer>
+
+     <!-- Botão de Página Inicial -->
+     <a href="#" class="home-button" onclick="goHome()">Página Inicial</a>
+
+     <script>
+        // Função para voltar à página inicial
+        function goHome() {
+            window.location.href = "index.html"; // Substitua com o caminho correto para sua página inicial
+        }
+    </script>
+
+    <script>
+        function openPage(url) {
+            window.location.href = url;
+        }
+
+        function goHome() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>
